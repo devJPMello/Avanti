@@ -41,7 +41,7 @@ body {
 }
 
 .promo-content .highlight {
-  background-color: #763dc5; /* Roxo */
+  background-color: #763dc5; 
   color: #fff !important;
   padding: 1px 5px;
   border-radius: 12px;
@@ -60,7 +60,7 @@ body {
 /* Main header section */
 .main-header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
-  padding: 8px 0; /* Reduzido de 16px */
+  padding: 8px 0; 
   background-color: #fff;
 }
 
@@ -75,7 +75,7 @@ body {
 
 .logo {
   width: 150px;
-  height: 24px; /* levemente menor */
+  height: 24px; 
 }
 
 /* Search bar */
@@ -91,7 +91,7 @@ body {
 .search-bar {
   position: relative;
   width: 100%;
-  height: 36px; /* menor */
+  height: 36px; 
   border: 1px solid #ddd;
   border-radius: 10px;
   display: flex;
@@ -108,12 +108,12 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 40px);  /* Deixa espaço pro botão/lupa, se for o caso */
-  height: 100%;              /* Ocupa a altura total do .search-box */
+  width: calc(100% - 40px);  
+  height: 100%;              
   border: none;
   outline: none;
   padding: 0 10px;
-  border-radius: 20px;       /* Para combinar com o contêiner */
+  border-radius: 20px;      
   font-size: 14px;
 }
 
@@ -146,7 +146,7 @@ body {
 .user-actions {
   display: flex;
   align-items: center;
-  gap: 16px; /* menor */
+  gap: 16px; 
 }
 
 .user-menu-icon {
@@ -169,7 +169,7 @@ body {
 .nav-container {
   max-width: 1260px;
   margin: 0 auto;
-  padding: 30px 20px 0; /* reduzido */
+  padding: 30px 20px 0; 
 }
 
 .nav-wrapper {
@@ -220,7 +220,7 @@ body {
 /* Container geral do menu */
 .mega-menu-nav {
   position: relative;
-  font-family: Arial, sans-serif; /* Exemplo de fonte */
+  font-family: Arial, sans-serif; 
 }
 
 /* Contêiner do menu principal (os itens superiores) */
@@ -228,15 +228,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff; /* Cor de fundo do menu principal */
+  background-color: #ffffff; 
   padding: 0 20px;
   gap: 21px;
 }
 
 /* Itens do menu principal */
 .menu-item {
-  position: relative; /* Necessário para o posicionamento absoluto do submenu */
-  margin-right: 20px; /* Espaçamento horizontal entre itens */
+  position: relative; 
+  margin-right: 20px; 
   cursor: pointer;
 }
 
@@ -263,14 +263,14 @@ body {
 /* Submenu geral (mega-menu) - começa oculto */
 .mega-menu {
   display: none;
-  position: absolute;   /* Mantém o submenu fora do fluxo padrão, não desloca o layout */
-  top: 100%;           /* Posiciona logo abaixo do item do menu principal */
-  left: 0;             /* Alinha à esquerda do item do menu principal */
-  width: auto;        /* Largura fixa ou ajuste para "auto"/"100%" se preferir */
+  position: absolute;   
+  top: 100%;           
+  left: 0;             
+  width: auto;       
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* Sombra de exemplo */
-  z-index: 999;        /* Para ficar sobre outros elementos */
-  padding: 20px;       /* Exemplo de espaçamento interno */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 999;       
+  padding: 20px;      
 }
 
 /* Exibe o submenu quando o mouse passa sobre o item */
@@ -281,14 +281,8 @@ body {
 /* Estilos do conteúdo dentro do mega-menu */
 .mega-menu-content {
   display: flex;
-  flex-wrap: nowrap; /* Para manter colunas lado a lado sem quebrar linha, se couber */
-  gap: 50px;         /* Espaçamento entre colunas e painéis */
-}
-
-/* Painel esquerdo com lista de departamentos */
-.left-panel {
-  padding: 16px;            /* Espaçamento interno */
-  min-width: 160px; 
+  flex-wrap: nowrap; 
+  gap: 50px;        
 }
 
 .department-list {
@@ -328,18 +322,20 @@ body {
   margin-bottom: 8px;
   color: #007bff;
   font-size: 16px;
+
 }
 
 /* Lista de categorias */
 .cat-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 12px;
 }
 
 .cat-list li {
   margin-bottom: 5px;
   cursor: pointer;
+  margin-top: 12px;
 }
 
 .cat-list li:hover {
@@ -348,7 +344,7 @@ body {
 
 /* Painel de imagem no mega-menu */
 .image-panel {
-  flex-shrink: 0; /* Garante que a imagem não seja comprimida */
+  flex-shrink: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,7 +483,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
-  width: 220px;       /* Define uma largura maior */
+  width: 220px;       
   min-height: 100px;
 }
 
@@ -591,11 +587,11 @@ body {
 }
 
 .carousel-control-prev {
-  left: -27px !important; /* Ajuste esse valor conforme necessário */
+  left: -27px !important; 
 }
 
 .carousel-control-next {
-  right: -51px !important; /* Ajuste esse valor conforme necessário */
+  right: -51px !important; 
 }
 
 
@@ -605,15 +601,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 10px; /* diminuiu de 30px 20px */
+  padding: 80px 10px; 
   background-color: #ffffff;
 }
 
 .feature-content {
   display: flex;
-  max-width: 1000px; /* reduziu de 1200px */
+  max-width: 1000px; 
   width: 100%;
-  gap: 30px; /* diminuiu o gap */
+  gap: 30px; 
   align-items: flex-start;
   flex-wrap: wrap;
 }
@@ -621,7 +617,7 @@ body {
 .feature-image {
   flex: 1 1 45%;
   background-color: #c5c5c5;
-  padding: 10px; /* diminuiu o padding */
+  padding: 10px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,16 +633,16 @@ body {
 }
 
 .feature-text h2 {
-  font-size: 28px; /* diminuiu de 35px */
+  font-size: 28px; 
   font-weight: 700;
-  margin-bottom: 12px; /* diminuiu a margem */
+  margin-bottom: 12px; 
 }
 
 .feature-text p {
-  font-size: 15px; /* diminuiu de 17px */
-  line-height: 1.5; /* diminuiu um pouco o espaçamento */
+  font-size: 15px; 
+  line-height: 1.5; 
   color: #000;
-  margin-bottom: 12px; /* diminuiu a margem inferior */
+  margin-bottom: 12px; 
 }
 
 /* Carousel ciruclos */
@@ -658,8 +654,8 @@ body {
 }
 
 .carousel-dots .dot {
-  width: 10px;      /* Largura igual à altura */
-  height: 10px;     /* Altura igual à largura */
+  width: 10px;      
+  height: 10px;     
   border-radius: 100px;       
   background-color: #d4d1d1; 
   border: none;
@@ -685,12 +681,12 @@ body {
 
 /* Container centralizado (a área de conteúdo) */
 .info-container {
-  max-width: 1000px;  /* diminuiu de 1200px para um layout mais compacto */
+  max-width: 1000px; 
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;  /* diminuiu o gap para reduzir espaçamento */
+  gap: 40px;  
 }
 
 /* Coluna de texto à esquerda */
@@ -698,14 +694,14 @@ body {
   flex: 1;
   min-width: 250px;
   color: #4F4F4F;
-  padding-left: 10px; /* reduziu o padding */
+  padding-left: 10px; 
 }
 
 .info-text h2 {
-  font-size: 20px;  /* diminuiu de 22px */
+  font-size: 20px;  
   font-weight: 700;
   color: #4F4F4F;
-  margin-bottom: 20px;  /* diminuiu a margem inferior */
+  margin-bottom: 20px;  
   text-transform: uppercase;
   text-align: center;
 }
@@ -714,15 +710,15 @@ body {
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;  /* diminuiu o gap */
-  margin-bottom: 20px;  /* diminuiu a margem inferior */
+  gap: 15px;  
+  margin-bottom: 20px;  
 }
 
 /* Ícone com tamanho fixo */
 .info-icon {
   flex-shrink: 0;
-  width: 60px;  /* diminuiu de 80px */
-  height: 60px; /* diminuiu de 80px */
+  width: 60px;  
+  height: 60px;
 }
 
 .info-icon img {
@@ -733,8 +729,8 @@ body {
 
 /* Texto ao lado do ícone */
 .info-item p {
-  font-size: 18px;  /* diminuiu de 20px */
-  line-height: 1.5;  /* leve redução na altura da linha */
+  font-size: 18px;  
+  line-height: 1.5;  
   color: #4F4F4F;
 }
 
@@ -744,7 +740,7 @@ body {
   min-width: 250px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;  /* diminuiu o padding */
+  padding-right: 10px;  
 }
 
 .info-image img {
@@ -757,7 +753,7 @@ body {
 .contact-banner {
   position: relative;
   width: 100%;
-  height: 380px; /* Altura mais enxuta */
+  height: 380px; 
   overflow: hidden;
 }
 
@@ -1226,8 +1222,3 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
-
-
-
-
-
