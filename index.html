@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avanti</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="promo-banner">
+      <div class="promo-content">
+        <span>Ganhe</span>
+        <span class="highlight">R$10,00</span>
+        <span>de desconto no seu primeiro pedido. Utilize o cupom</span>
+        <span class="coupon-code"><i>DESCONTO10</i></span>
+      </div>
+    </div>
+    <div class="main-header">
+      <div class="header-container">
+        <img src="images/Avanti.png" alt="Logo" class="logo" />
+        <div class="search-container">
+          <div class="search-bar">
+            <input type="text" id="search-input" class="search-input" placeholder="Digite aqui o que você procura" />
+            <div class="search-icon" id="search-btn">
+              <img src="images/Caminho 20013.png" alt="Buscar" />
+            </div>
+          </div>
+          <p id="search-message" class="search-result-message"></p> <!-- movido para baixo -->
+        </div>
+        <div class="user-actions">
+          <img src="images/Frame 44.png" alt="User menu" class="user-menu-icon" />
+          <div class="cart-wrapper">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <nav class="mega-menu-nav">
+      <div class="top-menu">
+
+        <div class="menu-item all-categories-wrapper">
+          <h2 class="all-categories">≡ Todas as Categorias</h2>
+          <div class="mega-menu mega-menu-all">
+            <div class="mega-menu-content">
+
+              <div class="left-panel">
+                <ul class="department-list">
+                  <li class="department-item">
+                    <span class="dept-name">Departamento</span>
+                    <span class="arrow">></span>
+                  </li>
+                  <li class="department-item">
+                    <span class="dept-name">Departamento</span>
+                    <span class="arrow">></span>
+                  </li>
+                  <li class="department-item">
+                    <span class="dept-name">Departamento</span>
+                    <span class="arrow">></span>
+                  </li>
+                  <li class="department-item">
+                    <span class="dept-name">Departamento</span>
+                    <span class="arrow">></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="category-columns">
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image-panel">
+                <img src="images/Grupo 21641.png" alt="Imagem destaque" class="panel-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+          <div class="mega-menu mega-menu-dept">
+            <div class="mega-menu-content">
+
+              <div class="category-columns">
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+
+                <div class="column">
+                  <h4 class="column-title">Categoria</h4>
+                  <ul class="cat-list">
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                    <li>Categoria</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="image-panel">
+                <img src="images/Grupo 21641.png" alt="Imagem destaque" class="panel-image" />
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+        <div class="menu-item department-wrapper">
+          <h3 class="department">Departamento</h3>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- sale -->
+  <div class="sale-banner">
+    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dfb14e54f9808531b172478cef6bf4be9d614cf9"
+      alt="Imagem promocional Super Sale" class="banner-image" />
+    <div class="content-container">
+      <div class="title-wrapper">
+        <h1 class="title">
+          <span class="title-bold">super</span>
+          <span class="title-light">sale</span>
+        </h1>
+      </div>
+      <p class="subtitle">Itens selecionados com até</p>
+      <p class="discount">50%off</p>
+    </div>
+  </div>
+
+  <!-- Carousel de vendas 1 -->
+  <div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="fw-bold">Lançamentos</h2>
+      <a href="#" class="text-dark text-decoration-none fw-semibold">Ver mais</a>
+    </div>
+
+    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Repetir esse bloco para cada produto -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <!-- ... outros 4 produtos aqui -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- ... outros 5 produtos -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- Indicadores (as 3 bolinhas) -->
+      <div class="carousel-dots">
+        <button role="button" class="dot" data-bs-target="#productCarousel" data-bs-slide-to="0"></button>
+        <button role="button" class="dot" data-bs-target="#productCarousel" data-bs-slide-to="1"></button>
+        <button role="button" class="dot" data-bs-target="#productCarousel" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#productCarousel"
+        data-bs-slide="prev">
+        <img src="images/Grupo 21090.png" alt="Anterior">
+      </button>
+      <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#productCarousel"
+        data-bs-slide="next">
+        <img src="images/Grupo 18119.png" alt="Próximo">
+      </button>
+    </div>
+  </div>
+
+  <!-- Primeiro Banner -->
+  <section class="feature-section">
+    <div class="feature-content">
+      <div class="feature-image">
+        <img src="images/Free_Mug_Mockup_2.png" alt="Caneca Avanti" />
+      </div>
+      <div class="feature-text">
+        <h2><br>LOREM IPSUM</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim.
+          Mauris vitae finibus dui. Mauris laoreet lacus ut
+          eleifend viverra. Cras efficitur volutpat dui, in lobortis
+          metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci,
+          auctor fringilla magna consequat interdum. Fusce
+          sagittis elit a libero commodo egestas efficitur id
+          augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim.
+          Mauris vitae finibus dui. Mauris laoreet lacus ut
+          eleifend viverra. Cras efficitur volutpat dui, in lobortis
+          metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci,
+          auctor fringilla magna consequat interdum. Fusce
+          sagittis elit a libero commodo egestas efficitur id
+          augue.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Segundo Banner -->
+  <section class="info-section">
+    <div class="info-container">
+      <div class="info-text">
+        <h2>LOREM IPSUM</h2>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="images/Circulo e Icone.png" alt="Ícone" />
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec,pellentesque
+            eu, pretium quis, sem.
+          </p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="images/Circulo e Icone.png" alt="Ícone" />
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec,pellentesque
+            eu, pretium quis, sem.
+          </p>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="images/Circulo e Icone.png" alt="Ícone" />
+          </div>
+          <p>
+            Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient
+            montes, nascetur ridiculus mus. Donec
+            quam felis, ultricies nec,pellentesque
+            eu, pretium quis, sem.
+          </p>
+        </div>
+      </div>
+
+      <div class="info-image">
+        <img src="images/segundo banner (1).png" alt="Caneca Avanti" />
+      </div>
+    </div>
+  </section>
+
+  <!-- terceiro Banner -->
+  <section class="feature-section">
+    <div class="feature-content">
+      <div class="feature-image">
+        <img src="images/Free_Mug_Mockup_2.png" alt="Caneca Avanti" />
+      </div>
+      <div class="feature-text">
+        <h2><br>LOREM IPSUM</h2>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim.
+          Mauris vitae finibus dui. Mauris laoreet lacus ut
+          eleifend viverra. Cras efficitur volutpat dui, in lobortis
+          metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci,
+          auctor fringilla magna consequat interdum. Fusce
+          sagittis elit a libero commodo egestas efficitur id
+          augue.
+        </p>
+        <p>
+          Duis consectetur metus nec lacus auctor dignissim.
+          Mauris vitae finibus dui. Mauris laoreet lacus ut
+          eleifend viverra. Cras efficitur volutpat dui, in lobortis
+          metus lacinia sit amet. Sed lacinia pharetra magna, vel
+          pulvinar ligula hendrerit a. Maecenas fringilla porttitor
+          tortor eget lacinia. Donec sollicitudin euismod orci,
+          auctor fringilla magna consequat interdum. Fusce
+          sagittis elit a libero commodo egestas efficitur id
+          augue.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Carousel de vendas 2 -->
+  <div class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h2 class="fw-bold">Lançamentos</h2>
+      <a href="#" class="text-dark text-decoration-none fw-semibold">Ver mais</a>
+    </div>
+
+    <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <!-- Repetir esse bloco para cada produto -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <!-- ... outros 4 produtos aqui -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <!-- ... outros 5 produtos -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <!-- ... outros 5 produtos -->
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="card border rounded shadow-sm p-2">
+                <div class="position-relative">
+                  <img src="images/2j0a2073 1.png" class="card-img-top" alt="Produto">
+                  <span class="badge bg-primary position-absolute top-0 start-0 m-1">Novo</span>
+                  <span class="badge bg-info text-dark position-absolute bottom-0 start-50 translate-middle-x mb-2">10%
+                    OFF</span>
+                </div>
+                <div class="card-body p-2">
+                  <h6 class="card-title fw-bold small">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h6>
+                  <p class="mb-1 text-muted text-decoration-line-through small">R$ 100,00</p>
+                  <p class="fw-bold mb-1">R$ 79,90</p>
+                  <p class="mb-2 small">Ou em até <strong>10x de R$ 7,90</strong></p>
+                  <button class="btn btn-primary w-100">Comprar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <!-- Indicadores (as 2 bolinhas) -->
+      <div id="carouselDots2" class="carousel-dots">
+        <button role="button" class="dot" data-bs-target="#productCarousel2" data-bs-slide-to="0"></button>
+        <button role="button" class="dot" data-bs-target="#productCarousel2" data-bs-slide-to="1"></button>
+        <button role="button" class="dot" data-bs-target="#productCarousel2" data-bs-slide-to="2"></button>
+      </div>
+
+
+      <!-- Controles -->
+      <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#productCarousel2"
+        data-bs-slide="prev">
+        <img src="images/Grupo 21090.png" alt="Anterior">
+      </button>
+      <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#productCarousel2"
+        data-bs-slide="next">
+        <img src="images/Grupo 18119.png" alt="Próximo">
+      </button>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <section class="contact-banner">
+    <img src="images/image.png" alt="Background" class="contact-banner-background" />
+    <p class="contact-message">
+      Entre em contato conosco e verifique a disponibilidade para sua região!
+    </p>
+  </section>
+
+
+  <!-- Newsletter -->
+  <section class="newsletter-container">
+    <div class="newsletter-wrapper">
+      <header class="newsletter-header">
+        <h2 class="newsletter-title">
+          Cadastre-se na nossa <span class="highlight">newsletter</span>
+        </h2>
+      </header>
+      <div class="newsletter-form-container">
+        <form class="newsletter-form">
+          <div class="input-group">
+            <input type="text" placeholder="Digite seu nome" class="form-input" aria-label="Nome" />
+          </div>
+          <div class="input-group">
+            <input type="email" placeholder="Digite seu e-mail" class="form-input" aria-label="E-mail" />
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="privacy-policy" class="checkbox-input" />
+            <label for="privacy-policy" class="checkbox-label">
+              <span>Estou de acordo com a</span>
+              <span class="policy-link">Política de Privacidade</span>
+            </label>
+          </div>
+          <button type="submit" class="submit-button">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="footer-top">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-columns">
+            <div class="footer-column">
+              <div class="logo-container">
+                <img src="images/Avanti.png" class="main-logo" alt="Main Logo" />
+                <img src="images/Sociais.png" class="payment-methods" alt="Payment Methods" />
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <div class="footer-links">
+                <h4 class="footer-heading">Institucional</h4>
+                <nav class="footer-nav">
+                  <a href="#" class="footer-link">Sobre Nós</a>
+                  <a href="#" class="footer-link highlighted">Nossas Lojas</a>
+                  <a href="#" class="footer-link">Privacidade e Segurança</a>
+                  <a href="#" class="footer-link">Termos e Condições</a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <div class="footer-links">
+                <h4 class="footer-heading">Central de ajuda</h4>
+                <nav class="footer-nav">
+                  <a href="#" class="footer-link">Fale Conosco</a>
+                  <a href="#" class="footer-link">Frete e Entrega</a>
+                  <a href="#" class="footer-link">Trocas e Devoluções</a>
+                  <a href="#" class="footer-link">Formas de Pagamento</a>
+                  <a href="#" class="footer-link">FAQ</a>
+                </nav>
+              </div>
+            </div>
+
+            <div class="footer-column">
+              <div class="footer-links">
+                <h4 class="footer-heading">Atendimento</h4>
+                <div class="contact-info">
+                  <p class="contact-item">
+                    <strong>Telefone:</strong> (00) 1234-5678
+                  </p>
+                  <p class="contact-item">
+                    <strong>E-mail:</strong> exemplo@exemplo.com.br
+                  </p>
+                  <p class="contact-item contact-hours">
+                    <strong>Horário de atendimento:</strong>
+                  </p>
+                  <p class="schedule-item">Segunda a Sábado: 07h00 às 23h00</p>
+                  <p class="schedule-item">Domingos e Feriados: 07h00 às 21h00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img src="images/Grupo 10397 (1).png" class="footer-divider" alt="Divider" />
+      </div>
+    </section>
+
+    <section class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p class="footer-disclaimer">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+          volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+          Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+          molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+          eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
+          zzril delenit augue duis dolore te feugait nulla facilisi.
+        </p>
+        <div class="payment-icons">
+          <img src="images/lets.png" class="payment-icon" alt="Payment Method 1" />
+          <img src="images/vtex-pci-200.png" class="payment-icon" alt="Payment Method 2" />
+          <div class="vertical-divider"></div>
+          <img src="images/Avanti.png" class="payment-icon" alt="Payment Method 3" />
+          <img src="images/VTEX_Logo (1) 1.png" class="payment-icon" alt="Payment Method 4" />
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
