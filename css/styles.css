@@ -41,7 +41,7 @@ body {
 }
 
 .promo-content .highlight {
-  background-color: #6220C1; /* Roxo */
+  background-color: #763dc5; /* Roxo */
   color: #fff !important;
   padding: 1px 5px;
   border-radius: 12px;
@@ -282,12 +282,13 @@ body {
 .mega-menu-content {
   display: flex;
   flex-wrap: nowrap; /* Para manter colunas lado a lado sem quebrar linha, se couber */
-  gap: 20px;         /* Espaçamento entre colunas e painéis */
+  gap: 50px;         /* Espaçamento entre colunas e painéis */
 }
 
 /* Painel esquerdo com lista de departamentos */
 .left-panel {
-  min-width: 160px;
+  padding: 16px;            /* Espaçamento interno */
+  min-width: 160px; 
 }
 
 .department-list {
@@ -303,7 +304,7 @@ body {
   justify-content: space-between;
   padding: 5px 0;
   cursor: pointer;
-  
+  padding: 8px 0;
 }
 
 .department-item:hover {
@@ -313,7 +314,7 @@ body {
 /* Colunas de categorias */
 .category-columns {
   display: flex;
-  gap: 20px;
+  gap: 60px;
 }
 
 /* Cada coluna */
