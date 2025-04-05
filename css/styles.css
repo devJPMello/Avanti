@@ -230,6 +230,7 @@ body {
   justify-content: center;
   background-color: #ffffff; /* Cor de fundo do menu principal */
   padding: 0 20px;
+  gap: 21px;
 }
 
 /* Itens do menu principal */
@@ -477,6 +478,7 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* Ajustes nos cards */
@@ -585,6 +587,14 @@ body {
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
+}
+
+.carousel-control-prev {
+  left: -27px !important; /* Ajuste esse valor conforme necessário */
+}
+
+.carousel-control-next {
+  right: -51px !important; /* Ajuste esse valor conforme necessário */
 }
 
 
