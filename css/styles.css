@@ -6,31 +6,30 @@
 }
 
 body {
-  
   font-family: "Nunito Sans", sans-serif;
 }
 
-/* Header structure */
+/* ============================
+   Header
+============================ */
 .header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 999; 
+  z-index: 999;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
 }
 
-/* Promotional banner */
+/* Promotional Banner */
 .promo-banner {
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #005cff;
-  
 }
-
 .promo-content {
-  color: #fff !important;
+  color: #fff;
   font-size: 15px;
   font-weight: 600;
   display: flex;
@@ -39,31 +38,25 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .promo-content .highlight {
-  background-color: #763dc5; 
-  color: #fff !important;
+  background-color: #763dc5;
   padding: 1px 5px;
   border-radius: 12px;
   font-weight: 700;
 }
-
 .promo-content .coupon-code {
   font-weight: 250;
   text-transform: uppercase;
-  color: #fff;
   padding: 1px 1px;
   border-radius: 8px;
 }
 
-
-/* Main header section */
+/* Main Header Section */
 .main-header {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.16);
-  padding: 8px 0; 
+  padding: 8px 0;
   background-color: #fff;
 }
-
 .header-container {
   max-width: 1260px;
   margin: 0 auto;
@@ -72,13 +65,12 @@ body {
   justify-content: space-between;
   padding: 0 20px;
 }
-
 .logo {
   width: 150px;
-  height: 24px; 
+  height: auto;
 }
 
-/* Search bar */
+/* Search Bar */
 .search-container {
   flex-grow: 1;
   max-width: 594px;
@@ -87,36 +79,33 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 .search-bar {
   position: relative;
   width: 100%;
-  height: 36px; 
+  height: 36px;
   border: 1px solid #ddd;
   border-radius: 10px;
   display: flex;
   align-items: center;
   padding-left: 20px;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   font-weight: 600;
   background-color: #fff;
-  margin-top: 30px;
+  margin-top: 20px;
+  /* Removido margem superior fixa */
 }
-
 .search-input {
   position: absolute;
   top: 0;
   left: 0;
-  width: calc(100% - 40px);  
-  height: 100%;              
+  width: calc(100% - 40px);
+  height: 100%;
   border: none;
   outline: none;
   padding: 0 10px;
-  border-radius: 20px;      
+  border-radius: 20px;
   font-size: 14px;
 }
-
 .search-input:-webkit-autofill,
 .search-input:-webkit-autofill:focus,
 .search-input:-webkit-autofill:hover {
@@ -124,39 +113,32 @@ body {
   box-shadow: 0 0 0 30px white inset !important;
   -webkit-text-fill-color: #000 !important;
 }
-
 .search-icon {
   position: absolute;
   right: 10px;
   z-index: 3;
   cursor: pointer;
 }
-
-
 .search-result-message {
   margin-top: 8px;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   color: #333;
   padding-left: 4px;
 }
 
-
-/* User actions section */
+/* User Actions */
 .user-actions {
   display: flex;
   align-items: center;
-  gap: 16px; 
+  gap: 16px;
+  position: relative;
 }
-
 .user-menu-icon {
   height: 24px;
 }
-
 .cart-wrapper {
   position: relative;
 }
-
 .cart-badge {
   width: 20px;
   height: 20px;
@@ -165,254 +147,190 @@ body {
   top: -5px;
 }
 
-/* Navigation container */
-.nav-container {
-  max-width: 1260px;
-  margin: 0 auto;
-  padding: 30px 20px 0; 
-}
-
-.nav-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
-
-/* Menu */
-/* Container geral do menu */
+/* ============================
+   Navigation Menu
+============================ */
 .mega-menu-nav {
   position: relative;
-  font-family: Arial, sans-serif; 
+  font-family: Arial, sans-serif;
 }
-
-/* Contêiner do menu principal (os itens superiores) */
 .top-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff; 
+  background-color: #fff;
   padding: 0 20px;
   gap: 21px;
 }
-
-/* Itens do menu principal */
 .menu-item {
-  position: relative; 
-  margin-right: 20px; 
+  position: relative;
+  margin-right: 20px;
   cursor: pointer;
 }
-
-/* Estilo de título "Todas as Categorias" */
 .all-categories {
   font-size: 16px;
   font-weight: bold;
 }
-
-.all-categories:hover{
-  color: #007bff;;
-  
+.all-categories:hover {
+  color: #007bff;
 }
-
-/* Estilo de título dos departamentos */
 .department {
   font-size: 14px;
 }
-
-.department:hover{
-  color: #007bff;;
+.department:hover {
+  color: #007bff;
 }
-
-/* Submenu geral (mega-menu) - começa oculto */
+/* Submenu (Mega-menu) */
 .mega-menu {
   display: none;
-  position: absolute;   
-  top: 100%;           
-  left: 0;             
-  width: auto;       
+  position: absolute;
+  top: 100%;
+  left: 0;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  z-index: 999;       
-  padding: 20px;      
+  z-index: 999;
+  padding: 20px;
 }
-
-/* Exibe o submenu quando o mouse passa sobre o item */
 .menu-item:hover > .mega-menu {
   display: block;
 }
-
-/* Estilos do conteúdo dentro do mega-menu */
 .mega-menu-content {
   display: flex;
-  flex-wrap: nowrap; 
-  gap: 50px;        
+  flex-wrap: nowrap;
+  gap: 50px;
 }
-
 .department-list {
   list-style: none;
   padding: 0;
   margin: 0;
- 
 }
-
 .department-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 0;
-  cursor: pointer;
   padding: 8px 0;
+  cursor: pointer;
 }
-
 .department-item:hover {
-  color: #007bff; /* Exemplo de mudança de cor no hover */
+  color: #007bff;
 }
-
-/* Colunas de categorias */
 .category-columns {
   display: flex;
   gap: 60px;
 }
-
-/* Cada coluna */
 .column {
   flex: 1;
 }
-
-/* Título das colunas de categoria */
 .column-title {
   font-weight: bold;
   margin-bottom: 8px;
   color: #007bff;
   font-size: 16px;
-
 }
-
-/* Lista de categorias */
 .cat-list {
   list-style: none;
   padding: 0;
   margin-top: 12px;
 }
-
 .cat-list li {
   margin-bottom: 5px;
   cursor: pointer;
   margin-top: 12px;
 }
-
 .cat-list li:hover {
-  color: #007bff; /* Exemplo de mudança de cor no hover */
+  color: #007bff;
 }
-
-/* Painel de imagem no mega-menu */
 .image-panel {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .panel-image {
-  max-width: 200px; /* Ajuste conforme desejado */
+  max-width: 200px;
   height: auto;
   display: block;
 }
 
-/* Sale */
+/* ============================
+   Sale Banner
+============================ */
 .sale-banner {
   width: 100%;
-  height: 360px;
+  min-height: 360px;
   position: relative;
   background-color: #e7e7ea;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
-
 .banner-image {
-  width: 520px;
-  height: 360px;
-  mix-blend-mode: darken;
+  width: auto;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-  left: 16%;
+  /* Removido posicionamento absoluto para que se ajuste na hierarquia */
 }
-
 .content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 12px;
-  width: 576px;
-  margin-left: 35%;
+  padding: 20px;
+  text-align: center;
 }
-
 .title-wrapper {
   width: 100%;
   text-align: center;
 }
-
 .title {
-  font-family: 'Nunito', sans-serif;
   font-size: 70px;
   text-transform: uppercase;
 }
-
 .title-bold {
   font-weight: 700;
   color: #000;
 }
-
 .title-light {
   font-weight: 300;
   color: #000;
 }
-
 .subtitle {
-  font-family: 'Nunito', sans-serif;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 7.5px;
   text-transform: uppercase;
   color: #005cff;
-  width: 100%;
   text-align: center;
 }
-
 .discount {
-  font-family: 'Nunito', sans-serif;
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
   color: #005cff;
-  width: 100%;
   text-align: center;
 }
 
-/* Carousel de vendas */
+/* ============================
+   Carousel de Vendas
+============================ */
 .container {
   max-width: 1280px;
   margin: 0 auto;
   position: relative;
 }
-
-/* Ajustes nos cards */
 .card {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px;
-  width: 220px;       
+  width: 220px;
   min-height: 100px;
 }
-
-/* Imagem do produto */
 .card-img-top {
   height: 220px;
   object-fit: contain;
 }
-
-/* Título e textos */
 .card-title {
   font-size: 14px;
   font-weight: 700;
@@ -420,35 +338,25 @@ body {
   line-height: 1.4;
   min-height: 48px;
 }
-
 .card-body p {
   font-size: 13px;
   margin-bottom: 4px;
 }
-
-/* Preço riscado */
 .text-decoration-line-through {
   color: #666;
   font-size: 12px;
 }
-
 .fw-bold {
   font-size: 20px;
 }
-
-/* Preço atual */
 .fw-bold.mb-1 {
   font-size: 16px;
   font-weight: 700;
   color: #000;
 }
-
-/* Parcelamento */
 .small strong {
   font-weight: 700;
 }
-
-/* Botão de comprar */
 .btn-primary {
   background-color: #005cff;
   border: none;
@@ -456,123 +364,103 @@ body {
   font-weight: 700;
   padding: 10px 0;
 }
-
 .btn-primary:hover {
   background-color: #0046cc;
 }
-
-/* Badges */
 .badge {
   font-size: 10px;
   padding: 4px 6px;
   font-weight: 700;
   border-radius: 4px;
   text-transform: uppercase;
-  
 }
-
 .badge.bg-info {
   font-size: 11px !important;
   text-decoration: underline !important;
-  background-color: #5EC0BE !important; 
+  background-color: #5EC0BE !important;
   color: #fff !important;
 }
-
 .badge.bg-primary {
   background-color: #00264e !important;
-  color: white !important;
+  color: #fff !important;
   font-size: 10px !important;
   font-weight: 700;
   text-transform: uppercase;
 }
-
-
-/* Carousel */
 .carousel-inner .row {
   justify-content: center;
   gap: 12px;
 }
-
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-size: 60% 60%;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
 }
-
 .carousel-control-prev,
 .carousel-control-next {
   width: auto;
 }
-
 .carousel-control-prev {
-  left: -27px !important; 
+  left: -27px !important;
 }
-
 .carousel-control-next {
-  right: -51px !important; 
+  right: -51px !important;
 }
 
-
-
-/* Primeiro Banner */
+/* ============================
+   Feature Section
+============================ */
 .feature-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 10px; 
-  background-color: #ffffff;
+  padding: 80px 10px;
+  background-color: #fff;
 }
-
 .feature-content {
   display: flex;
-  max-width: 1000px; 
+  max-width: 1000px;
   width: 100%;
-  gap: 30px; 
+  gap: 30px;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 .feature-image {
   flex: 1 1 45%;
   background-color: #c5c5c5;
-  padding: 10px; 
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .feature-image img {
   max-width: 100%;
   height: auto;
 }
-
 .feature-text {
   flex: 1 1 45%;
 }
-
 .feature-text h2 {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: 700;
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
-
 .feature-text p {
-  font-size: 15px; 
-  line-height: 1.5; 
+  font-size: 15px;
+  line-height: 1.5;
   color: #000;
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
 
-/* Carousel ciruclos */
-
+/* ============================
+   Carousel Dots
+============================ */
 .carousel-dots {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
 }
-
-/* Define o tamanho da bolinha com base na PNG (7px x 7px) */
 .carousel-dots .dot {
   width: 7px;
   height: 7px;
@@ -583,108 +471,91 @@ body {
   background: url('../images/Elipse110.png') no-repeat center center;
   background-size: contain;
 }
-
-/* Estado ativo: troca a imagem para a versão ativa */
 .carousel-dots .dot.active {
   background: url('../images/Elipse53.png') no-repeat center center;
   background-size: contain;
 }
 
-
-/* Segundo Banner */
+/* ============================
+   Info Section
+============================ */
 .info-section {
-  width: 100%; 
+  width: 100%;
   background: #dedede;
   background-size: cover;
   padding: 20px 0;
   margin: 0;
 }
-
-/* Container centralizado (a área de conteúdo) */
 .info-container {
-  max-width: 1000px; 
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;  
+  gap: 40px;
 }
-
-/* Coluna de texto à esquerda */
 .info-text {
   flex: 1;
   min-width: 250px;
   color: #4F4F4F;
-  padding-left: 10px; 
-}
-
-.info-text h2 {
-  font-size: 20px;  
-  font-weight: 700;
-  color: #4F4F4F;
-  margin-bottom: 20px;  
-  text-transform: uppercase;
+  padding-left: 10px;
   text-align: center;
 }
-
-/* Bloco de ícone + texto */
+.info-text h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #4F4F4F;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
 .info-item {
   display: flex;
   align-items: flex-start;
-  gap: 15px;  
-  margin-bottom: 20px;  
+  gap: 15px;
+  margin-bottom: 20px;
 }
-
-/* Ícone com tamanho fixo */
 .info-icon {
   flex-shrink: 0;
-  width: 60px;  
+  width: 60px;
   height: 60px;
 }
-
 .info-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-
-/* Texto ao lado do ícone */
 .info-item p {
-  font-size: 18px;  
-  line-height: 1.5;  
+  font-size: 18px;
+  line-height: 1.5;
   color: #4F4F4F;
 }
-
-/* Coluna da imagem à direita */
 .info-image {
   flex: 1;
   min-width: 250px;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;  
+  justify-content: center;
+  padding-right: 10px;
 }
-
 .info-image img {
   max-width: 100%;
   height: auto;
 }
 
-
-/* Banner */
+/* ============================
+   Contact Banner
+============================ */
 .contact-banner {
   position: relative;
   width: 100%;
-  height: 380px; 
+  height: 380px;
   overflow: hidden;
 }
-
 .contact-banner-background {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: blur(2px);
 }
-
 .contact-message {
   color: #fff;
   font-family: "Nunito", sans-serif;
@@ -705,7 +576,9 @@ body {
   justify-content: center;
 }
 
-/* Newsletter */
+/* ============================
+   Newsletter
+============================ */
 .newsletter-container {
   display: flex;
   justify-content: center;
@@ -716,29 +589,25 @@ body {
   padding: 3px 0;
   margin-top: 65px;
 }
-
 .newsletter-wrapper {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 .newsletter-header {
   margin-bottom: 24px;
 }
-
 .newsletter-title {
   color: #000;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
-  margin: 0;
 }
-
 .highlight {
-  color: #005cff;
+  color: #ffffff;
 }
-
 .newsletter-form-container {
   border-radius: 8px;
   padding: 34px 100px;
@@ -746,7 +615,6 @@ body {
   justify-content: center;
   background-color: #dedede;
 }
-
 .newsletter-form {
   display: flex;
   align-items: center;
@@ -754,77 +622,59 @@ body {
   max-width: 1032px;
   width: 100%;
 }
-
 .input-group {
   position: relative;
 }
-
 .form-input {
   width: 280px;
   height: 48px;
   border-radius: 8px;
   border: none;
   padding: 0 24px;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   color: #303030;
   background-color: #fff;
 }
-
 .checkbox-group {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .checkbox-input {
   width: 16px;
   height: 16px;
   border-radius: 4px;
   border: 1px solid #ddd;
-  margin: 0;
   background-color: #fff;
 }
-
 .checkbox-label {
   color: #656565;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   white-space: nowrap;
 }
-
 .policy-link {
   text-decoration: underline;
 }
-
 .submit-button {
   padding: 14px 24px;
   border-radius: 8px;
   color: #fff;
-  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   border: none;
   cursor: pointer;
-  white-space: nowrap;
   background-color: #005cff;
 }
 
-
-/* Footer */
+/* ============================
+   Footer
+============================ */
 .footer {
-  font-family:
-    "Nunito Sans",
-    -apple-system,
-    Roboto,
-    Helvetica,
-    sans-serif;
+  font-family: "Nunito Sans", -apple-system, Roboto, Helvetica, sans-serif;
   width: 100%;
-  padding: 40px 0;   
+  padding: 40px 0;
 }
-
-/* Footer Top Section */
 .footer-top {
   background-color: #f5f5f5;
   width: 100%;
@@ -832,127 +682,86 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 65px;
 }
-
 .footer-container {
   width: 1163px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
   margin-left: 18px;
-  
 }
-
 .footer-content {
   width: 100%;
 }
-
 .footer-columns {
   display: flex;
   gap: 20px;
 }
-
 .footer-column {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  line-height: normal;
   width: 25%;
 }
-
 .logo-container {
   display: flex;
   flex-direction: column;
 }
-
 .main-logo {
-  aspect-ratio: 5.62;
-  object-fit: contain;
-  object-position: center;
   width: 152px;
-  max-width: 100%;
-}
-
-.payment-methods {
-  aspect-ratio: 7.46;
   object-fit: contain;
-  object-position: center;
+}
+.payment-methods {
   width: 194px;
   margin-top: 40px;
-  max-width: 100%;
 }
-
 .footer-links {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
   font-size: 14px;
 }
-
 .footer-heading {
   color: #000;
   font-weight: 700;
   font-size: 14px;
-  margin: 0;
-  align-self: flex-start;
 }
-
 .footer-nav {
   display: flex;
   flex-direction: column;
   margin-top: 11px;
 }
-
 .footer-link {
   color: #303030;
   font-weight: 400;
   line-height: 28px;
   text-decoration: none;
 }
-
-.footer-link.highlighted {
-  color: #303030;
-}
-
 .contact-info {
   margin-top: 11px;
   color: #303030;
   font-weight: 400;
   line-height: 28px;
 }
-
 .contact-item {
   margin: 0;
 }
-
 .contact-hours {
   color: #303030;
   font-weight: 700;
   font-size: 12px;
   margin-top: 8px;
-  margin-bottom: 0;
 }
-
 .schedule-item {
   font-size: 12px;
   line-height: 22px;
   margin: 0;
 }
-
 .footer-divider {
-  aspect-ratio: 17.54;
-  object-fit: contain;
-  object-position: center;
   width: 546px;
   align-self: center;
   margin-top: 64px;
-  max-width: 100%;
 }
-
-/* Footer Bottom Section */
 .footer-bottom {
   background-color: #fff;
   width: 100%;
@@ -961,95 +770,47 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
 .footer-bottom-container {
   display: flex;
   width: 1058px;
   max-width: 100%;
   flex-direction: column;
-  align-items: stretch;
+  align-items: flex-start;
 }
-
 .footer-disclaimer {
   color: #303030;
   text-align: center;
   font-size: 12px;
-  font-weight: 400;
   line-height: 20px;
-  margin: 0;
 }
-
 .payment-icons {
-  align-self: center;
   display: flex;
   margin-top: 48px;
-  align-items: center;
   gap: 24px;
-  justify-content: center;
+  margin-left: 400px;
 }
-
 .payment-icon {
   object-fit: contain;
-  object-position: center;
-  align-self: stretch;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: 0;
   flex-shrink: 0;
 }
-
 .payment-icons .payment-icon:nth-child(1) {
-  aspect-ratio: 1.3;
   width: 39px;
 }
-
 .payment-icons .payment-icon:nth-child(2) {
-  aspect-ratio: 1.59;
   width: 51px;
 }
-
 .vertical-divider {
-  border-color: #f5f5f5;
-  border-style: solid;
-  border-width: 1px;
+  border: 1px solid #f5f5f5;
   background-color: #f5f5f5;
-  align-self: stretch;
-  margin-top: auto;
-  margin-bottom: auto;
   width: 0;
   flex-shrink: 0;
   height: 15px;
 }
-
 .payment-icons .payment-icon:nth-child(4) {
-  aspect-ratio: 5.71;
   width: 57px;
 }
-
 .payment-icons .payment-icon:nth-child(5) {
-  aspect-ratio: 2.79;
   width: 53px;
 }
-
-/* busca */
-.search-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  font-family: Arial, sans-serif;
-}
-
-#searchInput {
-  padding: 8px;
-  font-size: 16px;
-  width: 300px;
-}
-
-button {
-  padding: 8px 12px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-/* Responsividade mobile */
 
