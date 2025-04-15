@@ -572,20 +572,22 @@ body {
   margin-top: 1rem;
 }
 
+/* Define o tamanho da bolinha com base na PNG (7px x 7px) */
 .carousel-dots .dot {
-  width: 10px;      
-  height: 10px;     
-  border-radius: 100px;       
-  background-color: #d4d1d1; 
+  width: 7px;
+  height: 7px;
   border: none;
-  margin: 0 6px;
+  padding: 0;
+  margin: 0 3px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  background: url('../images/Elipse110.png') no-repeat center center;
+  background-size: contain;
 }
 
-
+/* Estado ativo: troca a imagem para a versão ativa */
 .carousel-dots .dot.active {
-  background-color: #000000 !important;;
+  background: url('../images/Elipse53.png') no-repeat center center;
+  background-size: contain;
 }
 
 
