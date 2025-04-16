@@ -44,3 +44,20 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("nav-toggle");
+  const menu = document.getElementById("nav-menu");
+  const links = document.querySelectorAll(".nav__link"); 
+
+  // Ao clicar no botão hamburguer, alterna a classe "active" no menu
+  toggle.addEventListener("click", function () {
+    menu.classList.toggle("active");
+  });
+
+  // Ao clicar em qualquer link, remove a classe "active" e fecha o menu
+  links.forEach(link => {
+    link.addEventListener("click", function () {
+      menu.classList.remove("active");
+    });
+  });
+});
