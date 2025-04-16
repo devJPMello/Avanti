@@ -285,6 +285,14 @@ body {
   display: block;
 }
 
+.mobile-top-bar{
+  display: none !important;
+}
+
+.mobile-menu-hide{
+  display: none !important;
+}
+
 /* ============================
    Sale Banner
 ============================ */
@@ -1050,6 +1058,69 @@ body {
 
   .discount {
     font-size: 25px;
+  }
+
+  .menu-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Estilo para o botão hamburger */
+  .hamburger {
+    font-size: 28px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: -305px;
+    margin-left:-5px;
+  }
+  
+  /* Hover para o botão */
+  .hamburger:hover {
+    background-color: #ffffff;
+    color: #000;
+  }
+  
+  /* Mobile top bar: por padrão, pode ficar oculta para desktop */
+  .mobile-top-bar {
+    display: none; /* Oculto no desktop */
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* (Opcional) Estilo para o menu mobile que aparece ao clicar no hamburger */
+  .mobile-menu {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px 16px;
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mega-menu-nav {
+    display: none !important;
+  }
+  
+  .mobile-top-bar {
+    display: flex !important;
+  }
+  
+  /* Classe auxiliar para ocultar elementos */
+  .hide {
+    display: none;
   }
 
   /* Carousel: garante que os cards se ajustem bem */
