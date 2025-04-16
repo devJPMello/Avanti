@@ -40,11 +40,15 @@ body {
   justify-content: center;
 }
 
-.promo-content .highlight {
+.promo-content .highlight1 {
   background-color: #763dc5;
   padding: 1px 5px;
   border-radius: 12px;
   font-weight: 700;
+}
+
+.highlight1 {
+  color: #ffffff;
 }
 
 .promo-content .coupon-code {
@@ -696,9 +700,6 @@ body {
   font-weight: 700;
 }
 
-.highlight1 {
-  color: #ffffff;
-}
 
 .highlight {
   color: #005cff;
@@ -960,14 +961,16 @@ body {
 
   .promo-content {
     font-size: 14px;
-    /* Diminui um pouco a fonte */
-    padding: 0 10px;
-    /* Reduz o padding lateral */
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .promo-banner {
-    padding: 15px 0;
+    padding: 35px ;
   }
+
+
+
 
   /* Reduz o tamanho do logo */
   .logo {
@@ -1218,6 +1221,7 @@ body {
     max-width: 300px;
     height: 40px;
     font-size: 13px;
+    margin-left: 15px;
   }
 
   .checkbox-group {
